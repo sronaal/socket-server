@@ -27,7 +27,7 @@ class Server{
 
     middlewares(){
         this.app.use(express.static(path.resolve(__dirname, '../public')))
-        this.use(cors())
+        this.app.use(cors())
     }
 
     configurarSocket(){
